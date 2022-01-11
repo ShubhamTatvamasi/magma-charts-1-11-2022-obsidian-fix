@@ -83,6 +83,45 @@ entries:
   orc8r:
   - apiVersion: v2
     appVersion: "1.0"
+    created: "2022-01-11T21:18:31.760108237Z"
+    dependencies:
+    - condition: certs.create
+      name: certs
+      repository: ""
+      version: 0.1.0
+    - condition: secrets.create
+      name: secrets
+      repository: ""
+      version: 0.1.10
+    - condition: metrics.enabled
+      name: metrics
+      repository: ""
+      version: 1.4.24
+    - condition: nms.enabled
+      name: nms
+      repository: ""
+      version: 0.1.12
+    - condition: logging.enabled
+      name: logging
+      repository: ""
+      version: 0.1.10
+    - name: orc8rlib
+      repository: https://shubhamtatvamasi.github.io/magma-orc8rlib-chart-1-11-2022
+      version: 0.1.4
+    description: Helm chart for the Magma Orchestrator
+    digest: 0d3f6f088f3806de12b44136d52ae12d4ea2315dcd43f195ff751592d598b9da
+    home: https://www.magmacore.org
+    keywords:
+    - magma
+    - orc8r
+    name: orc8r
+    sources:
+    - https://github.com/magma/magma
+    urls:
+    - https://github.com/ShubhamTatvamasi/magma-charts-1-11-2022-obsidian-fix/releases/download/orc8r-1.5.27/orc8r-1.5.27.tgz
+    version: 1.5.27
+  - apiVersion: v2
+    appVersion: "1.0"
     created: "2022-01-11T16:43:37.354303747Z"
     dependencies:
     - condition: certs.create
@@ -136,4 +175,4 @@ entries:
     urls:
     - https://github.com/ShubhamTatvamasi/magma-charts-1-11-2022-obsidian-fix/releases/download/secrets-0.1.10/secrets-0.1.10.tgz
     version: 0.1.10
-generated: "2022-01-11T16:43:37.502718907Z"
+generated: "2022-01-11T21:18:31.760126638Z"
